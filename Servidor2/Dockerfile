@@ -14,4 +14,4 @@ RUN pip install flask
 EXPOSE 5001
 
 # Comando para ejecutar la aplicacion 
-CMD ["python","app.py"] 
+CMD ["python","app2.py"] 
