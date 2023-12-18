@@ -1,0 +1,22 @@
+# todos los contenedores que vamos a ejecutar
+
+# VERSION DEL COMPOSE
+version: '3'
+
+# SERVICIOS
+services:
+  servidor1:
+    build:
+      context: ./Servidor1 # Ruta del dockerfile
+      dockerfile: Dockerfile
+    container_name: servidor1
+    ports:
+      - 5002:5000
+
+  servidor2:
+    build:
+      context: ./Servidor2 # Ruta del dockerfile
+      dockerfile: Dockerfile
+    container_name: servidor2
+    ports:
+      - 5003:5001
